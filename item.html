@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Add Items</title>
+    <style>
+        .blur {
+            opacity: 0.15;
+        }
+        .flex-container {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new-list {
+            display: block;
+            height: 150px;  
+            width: 400px;
+            border: 1px solid  rgb(231, 76, 60);
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 10px;
+            box-shadow: 2px 2px 2px 5px azure;
+            justify-content: space-between;
+        } 
+
+        #list-item {
+            border: 1px solid  rgb(231, 76, 60);
+            width: 70%;
+            height: 100%;
+        } 
+
+        .button {
+            border: 1px solid rgb(231, 76, 60);
+            background-color: rgb(231, 76, 60);
+            border-radius: 10px;
+            margin-top: 10px;
+            color: #ffffff;
+        }
+
+        /* .new-list {
+            width: 400px;
+            height: 200px;
+            position: relative;
+            bottom: 5em;
+            margin: auto;
+            color:#e74c3c;
+            border: 1px solid #e74c3c;
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px 5px lightgray ;
+            transition: 0.5s;
+        } */
+        /* .new-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: red 1px solid;
+        } */
+
+        .pop-up {
+            position: relative;
+            margin: 0 auto;
+            top: 25%;
+            vertical-align: middle;
+            /* transform: translate(-50%,-50%); */
+        }
+
+        .popup-title {
+            color: rgb(231, 76, 60);
+            text-align: center;
+            padding: 1%;
+            font-size:1.4em;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            margin-bottom: 10px;
+        }
+
+        .button:hover {
+            font-size: large;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <section class="blur">
+            <div class="main-container">
+                <div class="main-row">
+                    <h1 class="heading1 heading">Tasks</h1>
+                    <h1 class="heading2 heading">  Lists</h1>
+                    <div class="plus-icon">
+                        <i class='bx bxs-plus-circle'></i>
+                    </div>
+                    <p class="add-list-item">Add List</p>
+                    
+                </div>
+        
+                <div class="flex-boxes">
+                    <div class="todo-list-container">
+                        <p class="text1">Trip to Paris</p>
+                        <hr>
+                        <p class="Completed-task">Completed Task</p>
+                        <input type="checkbox" class="pending-task" name="pending">Pending Task</input>
+                    </div>
+        
+                    <div class="todo-list-container">
+                        <p class="text1">My Todo List</p>
+                        <hr>
+                        <p class="Completed-task">Completed Task</p>
+                        <input type="checkbox" class="pending-task" name="pending">Pending Task</input>
+                    </div>
+        
+                    <div class="todo-list-container">
+                        <p class="text1">My Todo List</p>
+                        <hr>
+                        <p class="Completed-task">Completed Task</p>
+                        <input type="checkbox" class="pending-task" name="pending">Pending Task</input>
+                    </div>
+                </div>   
+        </section>
+
+        <section class="pop-up">        
+            <div class="flex-container">
+                <center>
+                <div class="new-list">
+                    <div>
+                        <p class="popup-title">Add New List</p>
+                    </div>
+                    <div>
+                        <input type="text" id="list-item">
+                    </div>
+                    <div>
+                        <button type="button" class="button">Add</button>
+                    </div>
+                </div>
+            </center>
+            </div>
+        </section>
+        <footer class="footer">
+            <a class="page" href="new.html">Next</a>
+        </footer>
+</div>
+</body>
+</html>

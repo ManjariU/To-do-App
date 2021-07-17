@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-container {
+    margin: auto;
+    max-width: 745px;
+    align-content: center;
+    justify-content: center;
+}
+
+.heading{
+    display: inline-block;
+}
+
+.heading1{
+    font-family: 'Encode Sans SC',sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+}
+.heading2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 55px;
+    color: #999898;
+}
+
+.plus-icon{
+    display: inline-block;
+    color: #e74c3c;
+    font-weight: lighter;
+    margin-left: 283px;
+    font-size: 25px;
+}
+
+.add-list-item{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #999898
+}
+
+.todo-list-container {
+    width: 200px;
+    height: 325px;
+    border: 1px solid #e74c3c ;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px lightgrey;  
+    align-items: center;  
+}
+
+.text1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #ec3f2c;
+    margin-bottom: 10px;    
+}
+
+hr {
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+.Completed-task {
+    color: #e74c3c;
+    text-align: end;
+    margin: 35px 10px 5px 5px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-decoration-color: #e74c3c;    
+}
+
+.pending-task {
+    margin-top: 20px;
+}
+
+.flex-boxes {
+    display: flex;
+    justify-content: space-between;   /*To separate flexboxes hr'ly */
+    margin-top: 20px;
+    align-items: center;    
+}
+
+.footer {
+    /* display: block; */
+    margin-top: 20px;
+    color: #e9240e;
+    position: fixed;
+    left: 90%;
+    text-align: left;
+}
+
+.page{
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+    left: 45%;
+    top: 1em;
+}
+
+.page:hover {
+    cursor: pointer;
+}
