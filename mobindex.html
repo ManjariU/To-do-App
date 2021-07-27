@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Todo List</title>
+
+    <style>
+        @media screen and (min-width: 320px) and (max-width:480px) {
+
+            .body {
+                font-family: sans-serif;
+            }
+
+            .bold-head {
+                font-size: 40px;
+                font-weight: 600;
+            }
+
+            .light-head {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: normal;
+                color: rgb(172, 166, 166);
+            }
+
+            .bx {
+                color: #e74c3c;
+            }
+
+            .heading {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .main-row {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 15px;
+                margin-left: 6px;
+            }
+
+            .list {
+                margin-left: 10px;
+                color: rgba(56, 8, 16, 0.582); 
+                display: inline-block;
+                width: 280px;
+                height: fit-content;
+                border-radius: 5px;
+                position: relative;
+                box-shadow: 6px 5px 5px #201f1f29;
+                border: 1px solid #e74c3c;
+                margin-top: 20px;
+            }
+
+            .list-container {
+                margin-top: -1px;
+
+            }
+
+            .title {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-top: 20px;
+                margin-bottom: 15px;
+                padding: 0.5em;
+                font-weight: 400;
+            }
+
+            .last-list {
+                margin-bottom: 5px;
+             }  
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="main-row">
+            <p class="bold-head">Tasks      
+                    <span class="light-head"> Lists</span>&nbsp;<i class='bx bxs-plus-circle'></i> 
+            </p>
+    </div>
+       
+    <diV class="list-container">
+        <div class="list">          
+            <div class="title">Trip to Paris</div>
+        </div>
+
+        <div class="list">
+            <div class="title">My Todo List 1</div>
+        </div>
+
+        <div class="list">
+            <div class="title">My Todo List 2</div>
+        </div>
+
+        <div class="list">
+            <div class="title">My Todo List 3</div>
+        </div>
+
+        <div class="list">
+            <div class="title last-list">My Todo List 4</div>
+        </div>
+
+    </diV>
+
+    <footer class="footer">
+        <a class="page" href="paris.html">Next</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip to Paris</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="paris.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+        @media screen and (min-width: 320px) and (max-width:480px) {
+    .main-container{
+        position: absolute;;
+        width: 280px;
+        height: 200px;
+        align-items: center;
+        filter:blur(7px);
+
+    }
+
+    .cards{
+        width: 180px;
+        height: 300px;
+        border-radius: 7px;
+        border: 1px solid #e74c3c;
+        position: relative;
+        bottom: 1em;
+        margin-top: 50px;
+        margin-left: 90px;
+        box-shadow: 2px 2px 7px 4px lightgray ;
+        align-items: center;
+    }
+
+    .pheading{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    span {
+        text-align: center;
+    }
+
+    .new-list {
+                width: 280px;
+                height: 160px;
+                border: 1px solid #e74c3c;
+                border-radius: 8px;
+                box-shadow: 6px 6px 6px #d8d4d4;
+                margin-top: 200px;
+                margin-left: 32px;
+                filter:blur(0);
+                position: absolute;
+             }
+
+             .add-list {
+                color: #ce1616;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 300;
+             }
+
+             input {
+                height: 25px;
+                width: 200px;
+                border-radius: 6px;
+                margin-left: 40px;
+             }
+
+             button { 
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                height: 40px;
+                width: 100px;
+                font-size: 20px;
+                margin-top: 10px;
+                margin-left: 80px;
+                background-color: #f0644b;
+                color: #ffffff;
+                border-radius: 10px;
+                
+             }
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="hori">
+        <p class="pheading"><span class="heading">Trip to Paris</span></p>
+      </div>
+      <div>
+        <p class="back"><i class='bx bxs-left-arrow-circle' ></i> Back</p>
+      </div>
+      <div class="cards card-three">
+        <p class="card-heading">Trip to Paris</p>
+        <hr />
+        <p class="para">&nbsp; Completed Task</p>
+        <input type="checkbox" class="check" /><label class="pending"
+          >Pending Task</label
+        >
+        <i class='bx bx-plus-circle'></i>
+      </div>
+      <footer class="footer">
+        <a class="page" href="mobindex.html">Home</a>
+      </footer>
+    </div>
+    <div class="new-list">  
+        <p class="add-list">Add New List</p> 
+        <input type="text" id="text-box">  
+        <button type="button" class="button">Add</button>
+    </div>
+  </body>
+</html>
